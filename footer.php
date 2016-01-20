@@ -18,10 +18,10 @@
 			</div> 
 		</div><!--.footer-widgets-->
 	</div><!--.container-->
-
 	<div class="container" style='text-align: center; padding-bottom: 10px; border-top: 0px; font-size: .75em;'>
 	  <a href="https://www.dstrategies.org">Web Development Consultation from Digital Strategies</a>
 	</div>
+
 </footer><!--footer-->
 </div><!--.main-container-->
 <?php mts_footer(); ?>

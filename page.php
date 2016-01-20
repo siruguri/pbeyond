@@ -1,6 +1,5 @@
 <?php $mts_options = get_option('clock'); ?>
 <?php get_header(); ?>
-
 <div id="page" class="single">
 	<div class="content">
 		<article class="article">
