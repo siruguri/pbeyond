@@ -18,7 +18,7 @@
 			$image_id = get_post_thumbnail_id(); 
 			$image_url = wp_get_attachment_image_src($image_id,'slider_thumb'); 
 			$image_url = $image_url[0]; ?>
-		    <li data-thumb="<?php echo $image_url; ?>">
+		    <li class='sliderholder' data-thumb="<?php echo $image_url; ?>">
 		      <a href="<?php the_permalink() ?>">
 			<?php the_post_thumbnail('slider',array('title' => '')); ?>
 			<div class="flex-caption">

