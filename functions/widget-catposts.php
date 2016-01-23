@@ -110,7 +110,7 @@ class single_category_posts_widget extends WP_Widget {
 			"cat=".$cat."&orderby=date&order=DESC&posts_per_page=".$qty
 		);
 
-		echo '<ul class="category-posts">';
+		echo '<ul class="goo category-posts">';
 		
 		while ( $posts->have_posts() ) { $posts->the_post(); ?>
 		<li>
@@ -134,10 +134,11 @@ class single_category_posts_widget extends WP_Widget {
 				<?php if ( $comment_num == 1 ) : ?>
 					<?php echo comments_number(__('No Comment','mythemeshop'), __('One Comment','mythemeshop'), '<span class="comm">%</span> '.__('Comments','mythemeshop'));?>
 				<?php endif; ?>
-			</div> <!--end .entry-meta--> 	
+			</div> <!--end .entry-meta-->
 		</li>	
-		<?php }			
-		echo '</ul>'."\r\n";
+		<?php }
+		echo '</ul>';
+		echo get_post_type_archive_link('post')."\r\n";
 	}
 
 }

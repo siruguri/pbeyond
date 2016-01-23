@@ -2323,3 +2323,17 @@ a.btn_white { color: #4F4F4F!important }
 .relatepostli .post-info a:hover, a:hover, #commentform a, .copyrights a:hover, a, .post-info a:hover, .sidebar.c-4-12 a, footer .widget li a:hover { color: #111111 }
 footer .container { border-top: 4px solid #111111 }
 .postauthor h4, .postauthor-top, .total-comments, .latest-cat-post  header, #respond h4, .latesttitle, .frontTitle, .footer-widgets h3, .footer-widgets { border-top: 1px solid #111111 }
+
+/*-added to accommodate posts archives page*/
+.page-template-allposts-page .main-container #content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.page-template-allposts-page .main-container #content ul li a:link {
+    color: blue;
+    text-decoration: underline;
+}
+.page-template-allposts-page .main-container #content ul li a:visited {
+    color: brown;
+    text-decoration: underline;
+}

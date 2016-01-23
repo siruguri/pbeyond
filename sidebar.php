@@ -1,4 +1,4 @@
-<aside class="sidebar c-4-12">
+<aside class="sidebar c-4-12 foo">
 	<div id="sidebars" class="g">
 		<div class="sidebar">
 			<ul class="sidebar_list">
