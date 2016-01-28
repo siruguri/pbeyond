@@ -40,6 +40,7 @@ return;
 		<div id="respond" class="box m-t-6">
 			<?php global $aria_req; $comments_args = array(
 					'title_reply'=>'<h4><span>'.__('Leave a Reply','mythemeshop').'</span></h4></h4>',
+			  'comment_notes_before' => '<p class="comment-notes">' . __( 'Your email address will not be published.' ),
 					'comment_notes_after' => '',
 					'label_submit' => 'Post Comment',
 					'comment_field' => '<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>',

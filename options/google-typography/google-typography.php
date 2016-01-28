@@ -559,7 +559,7 @@ EOT;
 		// Stylesheets
 		wp_register_style('google-typography', get_template_directory_uri() .'/options/google-typography/stylesheets/google-typography.css', false, '1.0.0');
 		wp_register_style('chosen', get_template_directory_uri() .'/options/google-typography/stylesheets/chosen.css', false, '1.0.0');
-		wp_register_style('google-font', 'http://fonts.googleapis.com/css?family=Lato:300,400');
+		wp_register_style('google-font', 'https://fonts.googleapis.com/css?family=Lato:300,400');
 		wp_enqueue_style('google-typography');
 		wp_enqueue_style('chosen');
 		wp_enqueue_style('google-font');

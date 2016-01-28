@@ -1704,6 +1704,20 @@ ol.commentlist {
 }
 .commentmetadata ul, .commentmetadata ol { margin-top: 5px }
 /*-[ Comment Form ]----------------------------*/
+
+p.comment-form-comment {
+    width: 100%;
+}
+#commentform p.comment-form-author {
+    clear: none;
+}
+#commentform p.comment-form-email {
+    clear: none;
+}
+#commentform p.form-submit {
+    clear: none;
+}
+
 #commentform textarea {
     width: 95.5%;
     border: 1px solid #d0d0d0;
@@ -1715,7 +1729,7 @@ ol.commentlist {
 #commentform p {
     margin-bottom: 15px;
     float: left;
-    width: 100%;
+
     clear: both;
 }
 #commentform p label {

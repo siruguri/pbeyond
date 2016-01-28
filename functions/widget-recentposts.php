@@ -118,8 +118,8 @@ class mts_recent_posts_widget extends WP_Widget {
 				<?php endif; ?>
 			</div> <!--end .entry-meta--> 	
 		</li>	
-		<?php }			
-		echo '</ul>'."\r\n";
+		<?php }
+		echo '</ul><div class="archive_link" style="float: right"><a href="/flashpoints-archive">More Flashpoints&nbsp;&rsaquo;</a>'."\r\n";
 	}
 
 }
